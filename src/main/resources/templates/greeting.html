@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>greeting</title>
+</head>
+<body>
+<h1>Thymeleaf eksempel</h1>
+<h2 th:text="${today}"/>
+<p th:text="'Hello ' + ${message}"/>
+
+<p>This is a Hello <span th:text="${message}"/>! example.</p>
+</body>
+</html>

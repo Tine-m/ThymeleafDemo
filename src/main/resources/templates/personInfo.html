@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Person Info</title>
+</head>
+<body>
+<div th:each="person : ${list}">
+  <span th:text="${person.name} + ' ' + ${person.age}" />
+  <span th:if="${person.age >= 18}">Du må købe alkohol</span>
+  <span th:if="${person.age < 18}">Du må ikke købe alkohol</span>
+</div>
+</body>
+</html>
+</html>
